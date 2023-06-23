@@ -16,3 +16,11 @@
   - Helps with label association
 - ```type``` notes what type of data to expect.
 - ```placeholder``` provides notes to users as to what might be input into our fields.
+- ```value``` is what is held within the input when submitted.
+  - This gets populated when a user types into it.
+
+## Steps for DOM Manipulation
+- **Create** the element.
+- **Assign** any values to properties of *that* element
+  - Provide text, class name, id name, etc.
+- **Append** to a parent element.

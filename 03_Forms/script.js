@@ -30,3 +30,33 @@ form.addEventListener("submit", e => {
 //})
 
 //TODO: Display to Table (function)
+function displayTable() {
+    const t = document.getElementsByTagName('tbody');
+    console.log(t);
+    while(table.firstChild) {
+        table.removeChild(table.firstChild);
+    }
+
+    animals.forEach((animal, i) => {
+        // console.log(animal, i);
+        //* Create
+        let tr = document.createElement('tr'); // parent element
+        let id = document.createElement('td');
+        let name = document.createElement('td');
+        let sex = document.createElement('td');
+        let species = document.createElement('td');
+        
+        //* Assign
+        id.textContent = i + 1;
+        name.textContent = animal.name;
+        sex.textContent = animal.sex;
+        species.textContent = animal.species;
+
+        //* Append
+        tr.appendChild(id);
+        tr.appendChild(name);
+        tr.appendChild(sex);
+        tr.appendChild(species);
+        table.appendChild(tr);
+    })
+}
