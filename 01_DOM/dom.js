@@ -54,7 +54,7 @@ let h1 = document.createElement('h1');
 */
 
 h1.innerText = "Creating my first DOM element";
-// console.log(h1);
+console.log(h1);
 /* 
 *   Chain of Events:
     1. Create our element (or check if exists)
